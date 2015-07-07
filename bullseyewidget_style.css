@@ -1,0 +1,61 @@
+
+  
+  /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  COLOR EDITS GO HERE
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+  
+  
+  #bullseye-widget2 .theDistance, #bullseye-widget2 #bullseye-banner-header-nearest-store address, #bullseye-widget2 #bullseye-banner-header-nearest-store address > span {
+    color: #000000;
+    opacity: 1;
+  }
+  
+  #bullseye-widget2 #slidebox div.arrow, #bullseye-widget2 #slidebox a.close {
+    border-color: #888888 transparent transparent !important; /* Be sure to leave "transparent transparent" after the color to maintain an arrow shape! */
+    color: #888888 !important; /* This controls the close "X" color */
+    opacity: 1 !important;
+  }
+  
+  #bullseye-widget2 .headerWrap {
+    background-color: #333333; 
+  }
+  
+  #bullseye-widget2 .mapLink {
+    background-color: #333333; 
+  }
+  
+  /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  END COLOR EDITS
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+  body {
+    line-height: 1.8;
+	
+  }
+  
+
+
+  /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  WIDGET ALIGNMENT HERE
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+#bullseye-widget2 #slidebox {
+	right: 30px!important;
+}
+  /* Widget is aligned to bottom right corner by default. Delete comments on one of the following lines for different alignments
+
+  /* LEFT ALIGNED
+    left: 30px!important;
+  */
+
+  /* CENTER ALIGNED
+    left: calc(50% - 205px)!important;
+  /*
+}
+
+  /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  END WIDGET ALIGNMENT
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+  
+  
+  @media screen and (max-width: 420px) {#slidebox {width: 100%!important;}#bullseye-widget2 .storeImg > img {max-width: 70px!important;}#bullseye-widget2 #bullseye-banner-header-nearest-store > address {position: relative!important;right: 10px!important;}#bullseye-widget2 .theDistance {left: 85px!important;font-size: 10px!important;bottom: 40px!important;}}
