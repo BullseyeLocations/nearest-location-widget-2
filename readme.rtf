@@ -23,29 +23,47 @@
 
 \b0\fs24 \cf0 You'll need your Search API Key and Client ID. These can be found by logging into your Bullseye Locations {\field{\*\fldinst{HYPERLINK "https://app.bullseyelocations.com/Admin"}}{\fldrslt \cf2 \ul \ulc2 account}}, click Settings on the top right, then click Account.
 \f0 \
+\pard\pardeftab720
 
-\f1 Add your Search API Key and Client ID to lines 13\'a0and 14.\
-Additional settings can be made in this section of "bullseyewidget.js" as you'll see in the comments.\
+\f1 \cf0 Open bullseyewidget.js in your HTML editor and modify lines 13 and 14 to include\'a0\'a0your Search API Key and Client ID.]\
+\
+You can also update the values below to further customize your widget.\
 \pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf0 {\listtext	\'95	}Search radius\
-{\listtext	\'95	}Displaying/hiding phone number and location name\
-{\listtext	\'95	}Adding a link to the Store Locator page\
-{\listtext	\'95	}Image directory path\
-{\listtext	\'95	}\
+\ls1\ilvl0
+\b \cf0 {\listtext	\'95	}searchRadius
+\b0 -updates the default radius used to find the nearest location. \'a0Make this a small number\'a0if you have many locations an a large number if you have only a few.\
+\ls1\ilvl0
+\b {\listtext	\'95	}displayPhone/displayLocName
+\b0  -Control which data elements display\
+\ls1\ilvl0
+\b {\listtext	\'95	}linkToLocalLocator
+\b0 -If you've got a more advanced store locator somewhere link to this so users can search by category or with other filters.\
+\ls1\ilvl0
+\b {\listtext	\'95	}MapIconSrc
+\b0 -Use this to reference custom map-icon and a custom ajax loader be sure that the names of the files are: "map-icon.png" and "ajax-loader.gif"\
+\ls1\ilvl0
+\b {\listtext	\'95	}locationTerm
+\b0 -Are your customers looking for stores, locations, dealers? \'a0Update this value to the appropriate term.\
+\ls1\ilvl0
+\b {\listtext	\'95	}locatorHeadingText
+\b0 -The copy that appears in the header.\
+\ls1\ilvl0
+\b {\listtext	\'95	}defaultLocationImg
+\b0 -This image is displayed in the event that a location does not have a location thumbnail assigned to it.\
+\pard\tx720\pardeftab720
+\cf0 \
 \pard\pardeftab720\sa280
 
 \b\fs28 \cf0 Step 3: Upload\'a0widget elements\
 \pard\pardeftab720\sa240
 
-\b0\fs24 \cf0 You can upload your own custom images for your map icon and the ajax loader, or you can use the default ones hosted on the Bullseye site. \'a0If you upload your own, you'll need to make sure the names are "map-icon.png" and \'93ajax-loader.gif. \'94 \'a0Upload the files to a new\'a0directory on your website. \'a0You'll then want to update the reference with the correct path located on line 19 of "bullseyewidget.js". \'a0\
-If you want to upload your own default location image, you can do the same as above. This time update line 21 to use the correct reference.\
-Now upload the jQuery and CSS files to the same directory. Make sure to change "path/to/" in the JS and CSS code below to the location your files are saved.\
+\b0\fs24 \cf0 Upload bullseyewidget.js and\'a0\'a0bullseyewidget_style.css to a directory on your website and make a note of the path.\
 \pard\pardeftab720\sa280
 
-\b\fs28 \cf0 Step 4:\'a0Add Widget to your Pages\
+\b\fs28 \cf0 Step 4:\'a0Add the Widget to Your Pages\
 \pard\pardeftab720\sa240
 
-\b0\fs24 \cf0 In order to render the widget on your site, you'll need to add the following code to the page or pages where you want the widget to appear. \'a0You will only need to include the jQuery code if you don't already have a reference to it on your page.\
+\b0\fs24 \cf0 Update the URL references in the code below to point to the location of the bullseyewidget.js file and the bullseyewidget_style.css file. Then\'a0add\'a0the following code to the page or pages where you want the widget to appear. \'a0You will only need to include the jQuery code if you don't already have a reference to it on your page.\
 \pard\pardeftab720\sa240
 
 \b \cf0 Make sure to include the jQuery and CSS code below in the\'a0<head>:
@@ -65,5 +83,5 @@ Now upload the jQuery and CSS files to the same directory. Make sure to change "
 \b\fs28 \cf0 Step 5: Styling (optional)\
 \pard\pardeftab720\sa240
 
-\b0\fs24 \cf0 Color and styling edits can be made to "bullseyewidget_style.css" to match your brand.\
+\b0\fs24 \cf0 Color and styling edits can be made to "bullseyewidget_style.css" to match your brand. \'a0Of course, you'll need to download, edit and re-upload.\
 }
