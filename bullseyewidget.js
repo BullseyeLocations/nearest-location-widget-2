@@ -349,7 +349,15 @@ $(function () {
     });
 
     $('#slidebox').on('click', function() {
-      $('#slidebox').toggleClass('minWidg', 500);
+      var hasMinClass = $(this).hasClass('minWidg');
+		if(hasMinClass) {
+			$(this).removeClass('minWidg');
+			$(this).animate({bottom:'0px'}, 400);
+		}
+		else {
+			$(this).addClass('minWidg');
+			$(this).animate({bottom:'-149px'}, 400);
+		}
     });
   }
 
