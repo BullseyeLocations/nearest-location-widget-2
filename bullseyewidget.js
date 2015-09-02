@@ -9,15 +9,15 @@
     //Variables to modify
 
     var absoluteUrl = ''; //If you want to reference images/pages from another site, add the URL here between the quotes. Otherwise, leave it blank.
-    var bullseyeApiKey = ''; //Retrieve this from the Bullseye Admin
-    var bullseyeClientId = ''; //Retrieve this from the Bullseye Admin
+    var bullseyeApiKey = '407c3deb-e38e-4d7e-895b-9ea6302f61f2'; //Retrieve this from the Bullseye Admin
+    var bullseyeClientId = '267'; //Retrieve this from the Bullseye Admin
     var displayLocName = true; //Display the name of the location in the banner
     var displayPhone = true; //Display the phone number of the location in the banner
-    window.linkToLocalLocator =  ''; //Add a link to your locator page. 
-    var locationTerm = 'Location'; //Change if your locations are termed different than store such as dealer, restaurant, location, etc.
+    window.linkToLocalLocator =  'http://www.bullseyelocations.com/pages/teacher-search'; //Add a link to your locator page. 
+    var locationTerm = 'Teacher'; //Change if your locations are termed different than store such as dealer, restaurant, location, etc.
     var searchRadius = '50'; //Can be any number
     var mapIconSrc = 'https://app.bullseyelocations.com/Images/Admin/Global/'; // Enter the directory path to where 'map-icon.png' and 'ajax-loader.gif' are uploaded on your server. e.g.: 'http://example.com/images/'
-    var locatorHeadingText = 'FIND A LOCATION NEARBY'; // Change the heading text that appears at the top of the widget.  
+    var locatorHeadingText = 'FIND A MUSIC TEACHER'; // Change the heading text that appears at the top of the widget.  
 	var defaultLocationImg = 'https://app.bullseyelocations.com/Images/Admin/Global/location_thumb_placeholder.gif'; //default image for the location if one does not exist	
 
     //Do not modify
